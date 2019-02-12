@@ -15,7 +15,7 @@ while(cap.isOpened()):
     img = frame
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-    ret, thresh = cv2.threshold(gray, 200, 255, cv2.THRESH_BINARY)
+    ret, thresh = cv2.threshold(gray, 215, 255, cv2.THRESH_BINARY)
     contours, hierarchy = cv2.findContours(thresh, 1, 2)
 
     # cMax = max(contours, key = cv2.contourArea) python's indent system is crap :)

@@ -69,7 +69,7 @@ while(cap.isOpened()):
                 # written on a new image houghlines.jpg
                 #  cv2.imwrite("foundLine.jpg", img)
 """
-    ret, thresh = cv2.threshold(gray, 200, 255, cv2.THRESH_BINARY)
+    ret, thresh = cv2.threshold(gray, 215, 255, cv2.THRESH_BINARY)
     contours, hierarchy = cv2.findContours(thresh, 1, 2)
 
     # cMax = max(contours, key = cv2.contourArea) python's indent system is crap :)
