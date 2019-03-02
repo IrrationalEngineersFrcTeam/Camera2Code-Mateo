@@ -3,8 +3,8 @@ import cv2
 import numpy as np
 from pleasework import PleaseWork
 from networktables import NetworkTables
-NetworkTables.initialize(server='roborio-6239-frc.local')
-rp= NetworkTables.getTable("RaspberryPi")
+NetworkTables.initialize(server='10.62.39.2')
+rp= NetworkTables.getTable("Camera2")
 
 grip = PleaseWork()
 print(cv2.__version__)
@@ -39,7 +39,6 @@ while(cap.isOpened()):
       
         rp.putNumber("xDiff", 320-xCent)
         rp.putNumber("yDiff",180-yCent)
-
 
 
             # x, y, w, h = rect

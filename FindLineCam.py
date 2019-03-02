@@ -3,8 +3,8 @@
 import numpy as np
 import cv2
 print(cv2.__version__)
-#cap = cv2.VideoCapture("http://192.168.2.2:1181/stream.mjpg")
-cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture("http://192.168.2.3:1181/stream.mjpg")
+cap = cv2.VideoCapture(0);
 
 
 while(cap.isOpened()):
